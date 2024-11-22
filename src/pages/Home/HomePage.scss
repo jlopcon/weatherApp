@@ -1,0 +1,59 @@
+.homepage {
+  display: flex;
+}
+
+.main-content {
+  flex: 1;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(135deg, #f8f9fc, #e9ebf1);
+  min-height: 100vh;
+
+  .typing-animation {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2a5298;
+    margin-bottom: 20px;
+    margin-top: 3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #2a5298;
+    width: 22ch;
+    animation: typing 4s steps(22, end), blink 0.5s step-end infinite;
+  }
+
+  .suggestion {
+    font-size: 1.5rem;
+    color: #666;
+    margin-top: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 22ch;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
