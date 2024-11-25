@@ -1,6 +1,10 @@
 # Welcome to weatherApp
 
 This project is an app to see the current weather in every city around the world.
+To login:
+email:jose@gmail.com
+pass: 123
+
 
 ## Available Scripts
 
